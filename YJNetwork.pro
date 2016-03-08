@@ -17,7 +17,8 @@ SOURCES += main.cpp\
     packetutil.cpp
 
 HEADERS  += mainwindow.h \
-    packetutil.h
+    packetutil.h \
+    PacketMakeParent.h
 
 FORMS    += mainwindow.ui \
     packetutil.ui

@@ -13,8 +13,9 @@ MainWindow::MainWindow(QWidget *parent) :
     if(DevPacket.GetHandle() != NULL)
        ui->setupUi(this);
 
-    else
-        QMessageBox::information(NULL,"Error","This Devise's HANDLE Can't Find");
+    else{
+    }
+       // QMessageBox::information(NULL,"Error","This Devise's' HANDLE Can't Find");
 
 
 }

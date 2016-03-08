@@ -6,6 +6,7 @@ PacketUtil::PacketUtil(QWidget *parent) :
     ui(new Ui::PacketUtil)
 {
     ui->setupUi(this);
+    DeviceHandle = NULL;
     PrintDevList();
 }
 
@@ -38,6 +39,7 @@ void PacketUtil::PrintDevList() {
 void PacketUtil::on_OkDeviceSelect_clicked(QAbstractButton *button)
 {
     char errbuf[PCAP_ERRBUF_SIZE];
+
     QPushButton* OkButton = (QPushButton*)button;
     if(OkButton == ui->OkDeviceSelect->button(QDialogButtonBox::Ok)) {
         QListWidgetItem *Devitem = ui->listWidget->currentItem();

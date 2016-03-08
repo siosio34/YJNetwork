@@ -23,10 +23,9 @@ public:
     explicit PacketUtil(QWidget *parent = 0);
     void PrintDevList();
 
-    void PacketOpen();
-    void PacketSniff();
-    void PacketSend();
-
+   // virtual void PacketOpen() = 0;
+  //  virtual void PacketSniff() = 0;
+  //  virtual void PacketSend() = 0;
     pcap_t *GetHandle() { return DeviceHandle ;}
 
     ~PacketUtil();
